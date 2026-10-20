@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💕 A surprise for you</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+
+  <main class="card">
+
+    <!-- PAGE 1 -->
+    <section class="page active" id="page1">
+      <div class="emoji big">🌸</div>
+      <h1>Psst... this is for you 👀</h1>
+      <p class="sub">I have a surprise</p>
+      <p>But first, I have a little question for you... 🤭</p>
+      <button class="btn" data-next="page2">I'm ready! ✨</button>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page" id="page2">
+      <div class="emoji big">💌</div>
+      <h1>Are you ready to open the letter?</h1>
+      <p class="sub">Everything will make sense very soon!</p>
+      <div class="row">
+        <button class="btn" data-next="page3">Yes, open it! 💕</button>
+        <button class="btn ghost" id="noBtn">Not yet...</button>
+      </div>
+    </section>
+
+    <!-- PAGE 3: THE LETTER -->
+    <section class="page" id="page3">
+      <article class="letter">
+        <div class="emoji">🇰🇷 ✈️ 🌸</div>
+        <h2>I'm landing at Incheon!</h2>
+
+        <!-- EDIT THE LETTER TEXT BELOW -->
+        <p>📅 <strong>Thursday, July 16th, 2026</strong></p>
+        <p>🛬 Landing at <strong>15:40</strong></p>
+        <p>📍 <strong>Incheon Airport, Seoul</strong> 🇰🇷</p>
+        <p>🚗 Come pick me up! 💕</p>
+        <p class="sign">보고 싶었어 🌸<br /><small>I missed you so much</small></p>
+        <p>Get your car keys ready! 🗝️😄</p>
+        <p class="sign">See you very soon! 💕</p>
+        <!-- END LETTER -->
+      </article>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
